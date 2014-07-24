@@ -8,7 +8,8 @@ var logger = require('morgan');
 var app = express();
 app.use(logger('dev'));
 app.use(gzippo.staticGzip('' + __dirname));
-app.set('port', process.env.PORT || 9000);
+app.set('port', process.env.PORT || 3000);
+app.use(express.static(path.join(__dirname,'.tmp')));
 app.use(express.static(path.join(__dirname, 'app')));
 
 app.listen(app.get('port'), function() {

@@ -1,3 +1,4 @@
 angular.module('Espoiler', []).config(function(){
-  console.log('Angular init');
+    'use strict';
+    console.log('Angular init');
 });

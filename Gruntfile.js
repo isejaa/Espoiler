@@ -58,6 +58,16 @@ module.exports = function (grunt) {
                     '.tmp/styles/{,*/}*.css',
                     '<%= yeoman.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}'
                 ]
+            },
+            web: {
+                options: {
+                    nospawn: true, //Without this option specified express won't be reloaded
+                    atBegin: true
+                },
+                files: [
+                    'web.js'
+                ],
+                tasks: ['express:web']
             }
         },
 
@@ -348,6 +358,26 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        // Run a express server
+        express: {
+            options: {
+                // Override defaults here
+                livereload: true
+            },
+            web: {
+                options: {
+                    script: './web.js'
+                }
+            }
+        },
+        // open sever url.
+        open : {
+            web : {
+                path: 'http://127.0.0.1:3000/',
+                app: 'Google Chrome'
+            }
         }
     });
 
@@ -362,6 +392,15 @@ module.exports = function (grunt) {
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
+            'watch'
+        ]);
+    });
+
+    grunt.registerTask('express', function() {
+        grunt.task.run([
+            'clean:server',
+            'concurrent:server',
+            'autoprefixer',
             'watch'
         ]);
     });
