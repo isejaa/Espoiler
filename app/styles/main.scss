@@ -14,13 +14,15 @@ $brand-warning: #ffd66a;
 $text-muted: #90939a;
 $link-color: #000;
 
-$navbar-default-link-active-bg: #f7f7f7;
+$navbar-default-link-active-bg: white;
+$navbar-default-link-active-color: steelblue;
 $navbar-default-link-color: white;
+$navbar-default-link-hover-color: steelblue;
 $navbar-default-bg: lightsteelblue;
-$navbar-default-border: steelblue;
+$navbar-default-border: white;
 
 $navbar-default-brand-color: white;
-$navbar-default-brand-hover-color: black;
+$navbar-default-brand-hover-color: lightsteelblue;
 $navbar-default-brand-hover-bg: steelblue;
 
 $btn-success-bg: $brand-success;
