@@ -365,7 +365,8 @@ module.exports = function (grunt) {
         express: {
             options: {
                 // Override defaults here
-                livereload: true
+                livereload: true,
+                debug: true
             },
             web: {
                 options: {
