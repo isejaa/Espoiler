@@ -3,6 +3,8 @@ var http = require('http');
 var gzippo = require('gzippo');
 var path = require('path');
 var logger = require('morgan');
+var mongoose = require('mongoose');
+var bcrypt = require('bcryptjs');
 
 
 var app = express();

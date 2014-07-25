@@ -397,7 +397,7 @@ module.exports = function (grunt) {
         ]);
     });
 
-    grunt.registerTask('express', function() {
+    grunt.registerTask('server:express', function() {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
