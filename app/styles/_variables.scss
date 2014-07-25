@@ -1,6 +1,8 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$body-bg: white;
+
 $font-family-base: 'Open Sans', sans-serif;
-$headings-color: #111;
+$headings-color: steelblue;
 $headings-font-family: Avenir, sans-serif;
 $headings-font-weight: bold;
 
@@ -45,3 +47,6 @@ $alert-danger-border: darken($alert-danger-bg, 3%);
 $alert-info-bg: #e5f7fd;
 $alert-info-border: #bcf8f3;
 $alert-info-text: #25484e;
+
+
+$panel-bg: aliceblue;

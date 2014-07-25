@@ -1,7 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 
 @import "variables";
+
+@import "navigation";
 @import "home";
+@import "details";
+@import "add";
+
+@import "alerts";
 
 @import "font-awesome/scss/font-awesome";
 @import "sass-bootstrap/lib/bootstrap";
@@ -21,29 +27,17 @@ em {
   border-radius: 2px;
 }
 
+.media-object {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
 .center-form {
   width: 330px;
   margin: 10% auto;
 
   input {
     border-radius: 0;
-  }
-}
-
-.search {
-  color: #4f4f4f;
-  font-weight: 300;
-  font-size: 1.5em;
-  padding: 7px;
-  margin-top: -10px;
-  border: 0;
-  background-color: transparent;
-  outline: none;
-  -webkit-appearance: none;
-
-  &:focus {
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
   }
 }
 
