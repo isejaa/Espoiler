@@ -1,4 +1,4 @@
-angular.module('Espoiler', ['ngRoute', 'ngResource','mgcrea.ngStrap'])
+angular.module('Espoiler', ['ngRoute', 'ngResource', 'ngCookies','mgcrea.ngStrap'])
   .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     'use strict';
     $locationProvider.html5Mode(true);
