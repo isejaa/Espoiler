@@ -28,7 +28,7 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="navbar navbar-default navbar-static-top" role="navigation" bs-navbar>
+        <div ng-controller="NavbarController" class="navbar navbar-default navbar-static-top" role="navigation" bs-navbar>
             <div class="navbar-header">
             <a class="navbar-brand" href="/">Espoiler <strong>TV</strong></a>
             </div>
@@ -72,18 +72,21 @@
         </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script data-main="scripts/app" src="bower_components/require/bin/requirejs.js" ></script>
+        <!--
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/mainController.js"></script>
         <script src="scripts/controllers/addController.js"></script>
         <script src="scripts/controllers/detailController.js"></script>
         <script src="scripts/controllers/loginController.js"></script>
         <script src="scripts/controllers/signupController.js"></script>
+        <script src="scripts/controllers/navbarController.js"></script>
 
         <script src="scripts/filters/fromNow.js"></script>
 
         <script src="scripts/services/show.js"></script>
         <script src="scripts/services/subcription.js"></script>
-        <script src="scripts/services/auth.js"></script>
+        <script src="scripts/services/auth.js"></script> -->
         <!-- endbuild -->
 </body>
 </html>
