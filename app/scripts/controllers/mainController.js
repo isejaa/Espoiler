@@ -1,4 +1,4 @@
-angular.module('Espoiler')
+/*angular.module('Espoiler')
   .controller('MainController', ['$scope', 'Show', function($scope, Show) {
 
     $scope.alphabet = ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
@@ -25,3 +25,4 @@ angular.module('Espoiler')
       $scope.headingTitle = char;
     };
 }]);
+*/

@@ -1,4 +1,4 @@
-angular.module('Espoiler')
+/*angular.module('Espoiler')
   .controller('SignupController', ['$scope', 'Auth', function($scope, Auth) {
     $scope.signup = function() {
       Auth.signup({
@@ -6,4 +6,4 @@ angular.module('Espoiler')
         password: $scope.password
       });
     };
-  }]);
+  }]);*/

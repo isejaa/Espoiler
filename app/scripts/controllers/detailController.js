@@ -1,4 +1,4 @@
-angular.module('Espoiler')
+/*angular.module('Espoiler')
   .controller('DetailController', ['$scope', '$rootScope', '$routeParams', 'Show', 'Subscription',
     function($scope, $rootScope, $routeParams, Show, Subscription) {
       Show.get({ _id: $routeParams.id }, function(show) {
@@ -26,3 +26,4 @@ angular.module('Espoiler')
         })[0];
       });
     }]);
+    */

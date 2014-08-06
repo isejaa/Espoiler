@@ -1,4 +1,4 @@
-angular.module('Espoiler')
+/*angular.module('Espoiler')
   .factory('Subscription', ['$http', function($http) {
     return {
       subscribe: function(show, user) {
@@ -8,4 +8,4 @@ angular.module('Espoiler')
         return $http.post('/api/unsubscribe', { showId: show._id });
       }
     };
-  }]);
+  }]);*/

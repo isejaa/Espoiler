@@ -1,4 +1,4 @@
-angular.module('Espoiler')
+/*angular.module('Espoiler')
   .controller('AddController', ['$scope', '$alert', 'Show', function($scope, $alert, Show) {
     $scope.addShow = function() {
       Show.save({ showName: $scope.showName },
@@ -24,3 +24,4 @@ angular.module('Espoiler')
         });
     };
   }]);
+  */

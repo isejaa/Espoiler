@@ -1,4 +1,4 @@
-angular.module('Espoiler')
+/*angular.module('Espoiler')
   .factory('Auth', ['$http', '$location', '$rootScope', '$cookieStore', '$alert',
     function($http, $location, $rootScope, $cookieStore, $alert) {
       $rootScope.currentUser = $cookieStore.get('user');
@@ -65,4 +65,4 @@ angular.module('Espoiler')
           });
         }
       };
-    }]);
+    }]);*/

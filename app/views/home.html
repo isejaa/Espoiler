@@ -1,14 +1,18 @@
 <div class="jumbotron">
   <div class="container">
     <ul class="alphabet">
-      <li ng-repeat="char in alphabet">
-        <span ng-click="filterByAlphabet(char)">{{char}}</span>
+      {{#each alphabet}}
+      <li>
+        <span>{{this}}</span>
       </li>
+      {{/each}}
     </ul>
     <ul class="genres">
-      <li ng-repeat="genre in genres">
-        <span ng-click="filterByGenre(genre)">{{genre}}</span>
+      {{#each genres}}
+      <li>
+        <span>{{this}}</span>
       </li>
+      {{/each}}
     </ul>
   </div>
 </div>
@@ -23,15 +27,17 @@
     </div>
     <div class="panel-body">
       <div class="row show-list">
+        {{#each shows}}
         <div class="col-xs-4 col-md-3" ng-repeat="show in shows | filter:query | orderBy:'rating':true">
-          <a href="/shows/{{show._id}}">
-            <img class="img-rounded" ng-src="{{show.poster}}" width="100%"/>
+          <a href="#shows/{{this._id}}">
+            <img class="img-rounded" src="{{this.poster}}" width="100%"/>
           </a>
           <div class="text-center">
-            <a href="/shows/{{show._id}}">{{show.name}}</a>
-            <p class="text-muted">Episodes: {{show.episodes.length}}</p>
+            <a href="#shows/{{this._id}}">{{this.name}}</a>
+            <p class="text-muted">Episodes: {{this.episodes.length}}</p>
           </div>
         </div>
+        {{/each}}
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-angular.module('Espoiler')
+/*angular.module('Espoiler')
   .factory('Show', ['$resource', function($resource) {
     return $resource('/api/shows/:_id');
-  }])
+  }])*/

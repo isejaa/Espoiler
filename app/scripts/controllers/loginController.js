@@ -1,4 +1,4 @@
-angular.module('Espoiler')
+/*angular.module('Espoiler')
   .controller('LoginController', ['$scope', 'Auth', function($scope, Auth){
       $scope.login = function() {
         Auth.login({
@@ -7,3 +7,4 @@ angular.module('Espoiler')
         });
       };
   }]);
+  */
