@@ -1,8 +1,11 @@
 define([
     'backbone',
     'scripts/views/home',
-    'scripts/models/home'
-], function(Backbone, Home, HomeModel) {
+    'scripts/views/add',
+    'scripts/views/signup',
+    'scripts/views/login',
+    'scripts/models/home',
+], function(Backbone, Home, Add, SignUp, Login, HomeModel) {
     'use strict';
     return Backbone.Router.extend({
         routes: {
@@ -22,15 +25,15 @@ define([
         },
 
         login: function() {
-            console.log('login');
+            (new Login()).render();
         },
 
         signup: function() {
-            console.log('signup');
+            (new SignUp()).render();
         },
 
         add: function(){
-            console.log('add');
+            (new Add()).render();
         }
     });
 });
